@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<meta charset = "UTF-8">
+<meta name = "viewport" content="width=device-width">
+<title> quote generator </title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    
+    .intro{
+        text-align:center;
+    }
+    
+    .title{
+        text-align:center;
+    }  
+
+    .navigation{
+      text-align:center;
+      font-family: 'Montserrat', sans-serif;
+      color:#576F72;
+    }
+    
+    h4{
+        color:#576F72;
+        font-family: 'Montserrat', sans-serif;
+
+    }
+    
+    h5{
+        color:#576F72;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    h1{
+        color:#7D9D9C;
+        font-family: 'Ibarra Real Nova', serif;
+    }
+    
+     h2{
+        color:#7D9D9C;
+        font-family: 'Ibarra Real Nova', serif;
+    }
+    
+    h3{
+        color:#7D9D9C;
+        font-family: 'Ibarra Real Nova', serif;
+    }
+
+    body{
+        background-color:#F0EBE3;
+    }
+    
+    button{
+        font-family: 'Montserrat', serif;
+    }
+    #output{
+        color:#576F72;
+        font-family: 'Montserrat', serif;
+    }
+    
+    }
+</style>
+    
+<body>
+<header align = "center">
+<a href="index.html"><img src="https://fontmeme.com/permalink/220903/98ad2ca5f111abe54f7e8977a92b204f.png" alt="handwriting-fonts" border="0"> </a>
+</header>
+<hr>
+    
+<div class = "navigation">
+<nav>
+<table align = "center" cellspacing = "5" cellpadding = "5">
+<tr>
+<td> <a href = "index.html"> Home </a></td>
+<td> <a href = "letter.html"> Letter </a> </td>
+<td> <a href = "generator.html"> Word Generator </a></td>
+<td> <a href = "quote.html"> Quote Generator </a>
+</td>
+<td> <a href = "poem.html"> Poem Generator </a></td>
+</tr> 
+</table>
+</nav>
+</div>
+    
+<div class = "intro">
+ <h1> quote generator </h1>
+  <img src = "https://64.media.tumblr.com/34fa74f67bc4ab2e3ba662e5e1a5d57d/d0a811ee178fe8e8-4d/s500x750/5ba3032fd673af5657e8434f9404308000d9ab41.gifv" width = "15%">
+  <h2> it's just random quotes with a little hint of you in it. </h2>
+<h3> click the button and see what monstrosity pops up! </h3>
+  <div class = "button">
+    <button> oh no y'all brace yourselv- </button>
+  </div>
+  <div>
+   
+  
+
+  <div id="output"></div>
+
+  <script>
+   
+    var btn = document.querySelector("button");
+    var out = document.getElementById("output");
+    
+  
+    btn.addEventListener("click", getWord);
+   
+    function getWord(){
+     
+      
+      var theWord= [
+        'Champions keep playing until they get it right. — Billie Jean King.',
+        'We do not just sit around and wait for other people. We just make, and we do. — Arlan Hamilton.',
+        'Work until your bank account looks like a phone number. —Unknown.',
+        'I would rather regret the things I have done than regret the things I have not done. — Lucille Ball.',
+        'Do not let what you cannot do interfere with what you can do. —John Wooden.',
+        'If you are going through hell, keep going. —Winston Churchill.',
+        'We may not have it all together, but together we have it all. — Unknown.',
+      ];
+
+      
+      var wordNum = Math.floor(Math.random() * theWord.length);
+      
+     
+      output.textContent = theWord[wordNum];
+    }
+</script>
+<br>
+<h5> hopefully you didn't cringe at this one ! if you did, i'm sorry that you can not handle this mess. </h5>
+</div>
+</div>
+</body>
